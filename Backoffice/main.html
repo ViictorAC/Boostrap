@@ -24,7 +24,7 @@
     <div class="container-fluid">
         <div class="row align-items-center">
             <div class="col-12 p-0 ">
-                <nav class="navbar bg-body-tertiary">
+                <nav class="navbar">
                     <div class="container-fluid ">
                         <a class="navbar-brand nombre-logo d-flex">
                             <i
@@ -51,63 +51,107 @@
             </div>
         </div>
 
-       
-            <div class="row fixed-start">
-                <div class="col-2 p-0">
-                    <div class="list-group rounded-0 list-group-flush menu_lateral">
-                        <a href="#" class="list-group-item list-group-item-action border-0 link-light bg_menu_lateral d-flex align-items-center">
-                            <i class="bi bi-paperclip fs-4 pe-3 py-1"></i>
-                            <span class="pt-2">Atributs</span>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action border-0 link-light bg_menu_lateral d-flex align-items-center">
-                            <i class="bi bi-cart-fill fs-4 pe-3 py-1"></i>
-                            <span class="pt-2">Carrets</span>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action border-0 link-light bg_menu_lateral d-flex align-items-center">
-                            <i class="bi bi-person-standing fs-4 pe-3 py-1"></i>
-                            <span class="pt-2">Clients</span>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action border-0 link-light bg_menu_lateral d-flex align-items-center">
-                            <i class="bi bi-sliders fs-4 pe-3 py-1"></i>
-                            <span class="pt-2">Configur.</span>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action gx-5 border-0 link-light bg_menu_lateral d-flex align-items-center">
-                            <i class="bi bi-bag fs-4 pe-3 py-1"></i>
-                            <span class="pt-2">Coman. 
-                                <span class="badge text-bg-danger rounded-circle px-2 ms-2">1</span> 
-                            </span>
-                            
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action border-0 link-light bg_menu_lateral d-flex align-items-center">
-                            <i class="bi bi-bar-chart fs-4 pe-3 py-1"></i>
-                            <span class="pt-2">Estadís.</span>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action border-0 link-light bg_menu_lateral d-flex align-items-center">
-                            <i class="bi bi-folder fs-4 pe-3 py-1"></i>
-                            <span class="pt-2">Famílies</span>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action border-0 link-light bg_menu_lateral d-flex align-items-center">
-                            <i class="bi bi-geo-alt fs-4 pe-3 py-1"></i>
-                            <span class="pt-2">Localitza.</span>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action border-0 link-light bg_menu_lateral d-flex align-items-center">
-                            <i class="bi bi-tag fs-4 pe-3 py-1"></i>
-                            <span class="pt-2">Ofertes</span>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action border-0 link-light bg_menu_lateral d-flex align-items-center">
-                            <i class="bi bi-box-seam fs-4 pe-3 py-1"></i>
-                            <span class="pt-2">Productes</span>
-                        </a>
-                        <div class="list-group-item  list-group-item-action seleccionat border-0 link-light bg_menu_lateral d-flex align-items-center">
-                            <i class="bi bi-person fs-4 ms-0 ps-0 pe-3 py-1"></i>
-                            <span class="pt-2">Usuaris</span> 
-                        </div>
-                        <a href="#" class="d-lg-none list-group-item list-group-item-action border-0 link-light bg_menu_lateral d-flex align-items-center">
-                            <i class="bi bi-box-arrow-right fs-4 pe-3 py-1"></i>
-                            <span class="pt-2">Exit</span>
-                        </a>
+
+        <div class="row">
+            <div class="col-2 p-0">
+                <div class="list-group rounded-0 list-group-flush bg_menu_lateral min-vh-100">
+                    <a href="#"
+                        class="list-group-item list-group-item-action border-0 link-light bg_menu_lateral d-flex align-items-center">
+                        <i class="bi bi-paperclip fs-4 pe-3 py-1"></i>
+                        <span class="pt-2">Atributs</span>
+                    </a>
+                    <a href="#"
+                        class="list-group-item list-group-item-action border-0 link-light bg_menu_lateral d-flex align-items-center">
+                        <i class="bi bi-cart-fill fs-4 pe-3 py-1"></i>
+                        <span class="pt-2">Carrets</span>
+                    </a>
+                    <a href="#"
+                        class="list-group-item list-group-item-action border-0 link-light bg_menu_lateral d-flex align-items-center">
+                        <i class="bi bi-person-standing fs-4 pe-3 py-1"></i>
+                        <span class="pt-2">Clients</span>
+                    </a>
+                    <a href="#"
+                        class="list-group-item list-group-item-action border-0 link-light bg_menu_lateral d-flex align-items-center">
+                        <i class="bi bi-sliders fs-4 pe-3 py-1"></i>
+                        <span class="pt-2">Configur.</span>
+                    </a>
+                    <a href="#"
+                        class="list-group-item list-group-item-action gx-5 border-0 link-light bg_menu_lateral d-flex align-items-center">
+                        <i class="bi bi-bag fs-4 pe-3 py-1"></i>
+                        <span class="pt-2">Coman.
+                            <span class="badge text-bg-danger rounded-circle px-2 ms-2">1</span>
+                        </span>
+                    </a>
+                    <a href="#"
+                        class="list-group-item list-group-item-action border-0 link-light bg_menu_lateral d-flex align-items-center">
+                        <i class="bi bi-bar-chart fs-4 pe-3 py-1"></i>
+                        <span class="pt-2">Estadís.</span>
+                    </a>
+                    <a href="#"
+                        class="list-group-item list-group-item-action border-0 link-light bg_menu_lateral d-flex align-items-center">
+                        <i class="bi bi-folder fs-4 pe-3 py-1"></i>
+                        <span class="pt-2">Famílies</span>
+                    </a>
+                    <a href="#"
+                        class="list-group-item list-group-item-action border-0 link-light bg_menu_lateral d-flex align-items-center">
+                        <i class="bi bi-geo-alt fs-4 pe-3 py-1"></i>
+                        <span class="pt-2">Localitza.</span>
+                    </a>
+                    <a href="#"
+                        class="list-group-item list-group-item-action border-0 link-light bg_menu_lateral d-flex align-items-center">
+                        <i class="bi bi-tag fs-4 pe-3 py-1"></i>
+                        <span class="pt-2">Ofertes</span>
+                    </a>
+                    <a href="#"
+                        class="list-group-item list-group-item-action border-0 link-light bg_menu_lateral d-flex align-items-center">
+                        <i class="bi bi-box-seam fs-4 pe-3 py-1"></i>
+                        <span class="pt-2">Productes</span>
+                    </a>
+                    <div
+                        class="list-group-item ps-1 seleccionat border-0 link-light bg_menu_lateral d-flex align-items-center">
+                        <i class="bi bi-person fs-4 ms-0 ps-0 pe-3 py-1"></i>
+                        <span class="">Usuaris</span>
+                    </div>
+                    <a href="#"
+                        class="d-lg-none list-group-item list-group-item-action border-0 link-light bg_menu_lateral d-flex align-items-center">
+                        <i class="bi bi-box-arrow-right fs-4 pe-3 py-1"></i>
+                        <span class="pt-2">Exit</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-10 pt-5 ps-4 pe-4 gap-2">
+                <div class="row g-3 filtre rounded">
+                    <div class="col-4 ps-4">
+                        <div class="pb-1">Nom</div>
+                        <input class="form-control rounded" placeholder="Filtrar per nom...">
+                    </div>
+                    <div class="col-4 ps-3 pe-3">
+                        <div class="pb-1">Cognoms</div>
+                        <input class="form-control rounded" placeholder="Filtrar per cognoms...">
+                    </div>
+                    <div class="col-4 ps-2 pe-3">
+                        <div class="pb-1">Dni</div>
+                        <input class="form-control rounded" placeholder="Filtrar per dni...">
+                    </div>
+                    <div class="col-4 ps-4">
+                        <div class="pb-2">Email</div>
+                        <input class="form-control rounded" placeholder="Filtrar per email...">
+                    </div>
+
+                    <div class="col-12 d-md-flex justify-content-md-end gap-2 pe-3 pb-3">
+                        <button type="button" class="btn btn-warning text-white rounded">
+                            <i class="bi bi bi-funnel"></i>
+                            Filtrar
+                        </button>
+                        <button type="button" class="btn btn-secondary fs-6 rounded">
+                            <i class="bi bi-trash"></i>
+                            Netejar
+                        </button>
                     </div>
                 </div>
+            </div>
+        </div>
+
 </body>
 
 </html>
