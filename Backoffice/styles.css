@@ -10,6 +10,10 @@ body{
     background-color: #d1d5db;
 }
 
+.bg-morat {
+    background-color: #47488e;
+}
+
 .bg_menu_lateral, .menu_lateral {
     background-color: #1e293b;
 }
@@ -27,4 +31,8 @@ body{
 
 .filtre{
     background-color: #bcd0ea !important;
+}
+
+.entrar:hover {
+    background-color: #37376b !important;
 }
