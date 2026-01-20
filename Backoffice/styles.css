@@ -20,11 +20,15 @@ body{
 }
 .algo3{
     position: sticky;
-    top: 130px;
-    left:0px;
-    z-index: 100;
+    top: 165px; 
+    align-self: flex-start; 
+    max-height: calc(90vh - 160px); 
+
 }
 
+.algo3 .list-group {
+    min-height: 100%;
+}
 
 
 .bg-gris {

@@ -26,6 +26,12 @@
             <div class="col-12 p-0">
                 <nav class="navbar bg-white">
                     <div class="container-fluid">
+
+                        <button class="navbar-toggler d-sm-none d-lg-none" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#menuLateral" aria-controls="menuLateral">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
                         <a class="navbar-brand nombre-logo d-flex">
                             <i
                                 class="bi bi-lightbulb text-white bg-warning border-0 px-2 py-1 rounded-circle small "></i>
@@ -35,9 +41,9 @@
                             <img class="rounded-circle img-fluid me-3 imgPerfil"
                                 src="/Backoffice/recursos/foto_persona.png" alt="">
                             <span
-                                class="navbar-text border-end border-2 border-dark-subtle pe-3 me-3 text-dark py-3 ">Manolo
+                                class="navbar-text d-none d-sm-block d-lg-block border-end border-2 border-dark-subtle pe-3 me-3 text-dark py-3 ">Manolo
                                 Garibolo</span>
-                            <i class="bi bi-box-arrow-right text-primary fs-4 "></i>
+                            <i class="bi bi-box-arrow-right text-primary fs-4 d-none d-sm-block d-lg-block"></i>
                         </div>
                     </div>
                 </nav>
@@ -113,7 +119,7 @@
                         <span class="">Usuaris</span>
                     </div>
                     <a href="#"
-                        class="d-lg-none list-group-item list-group-item-action border-0 link-light bg_menu_lateral d-flex align-items-center">
+                        class="d-sm-none d-lg-none list-group-item list-group-item-action border-0 link-light bg_menu_lateral d-flex align-items-center">
                         <i class="bi bi-box-arrow-right fs-4 pe-3 py-1"></i>
                         <span class="pt-2">Exit</span>
                     </a>
@@ -121,20 +127,20 @@
             </div>
             <div class="col-10 pt-5 ps-4 pe-4 gap-2">
                 <div class="row g-3 filtre rounded">
-                    <div class="col-4 ps-4">
+                    <div class="col-lg-4 col-sm-6 ps-lg-4">
                         <div class="pb-1">Nom</div>
                         <input class="form-control rounded" placeholder="Filtrar per nom...">
                     </div>
-                    <div class="col-4 ps-3 pe-3">
+                    <div class="col-lg-4 col-sm-6 pe-lg-3 ps-lg-3">
                         <div class="pb-1">Cognoms</div>
                         <input class="form-control rounded" placeholder="Filtrar per cognoms...">
                     </div>
-                    <div class="col-4 ps-2 pe-3">
+                    <div class="col-lg-4 col-sm-6 ps-sm-4 pe-sm-2 pe-lg-3 ps-lg-3">
                         <div class="pb-1">Dni</div>
                         <input class="form-control rounded" placeholder="Filtrar per dni...">
                     </div>
-                    <div class="col-4 ps-4">
-                        <div class="pb-2">Email</div>
+                    <div class="col-lg-4 col-sm-6  pt-sm-0 pe-sm-3 ps-lg-4 ps-sm-2">
+                        <div class="pb-2 pb-sm-1">Email</div>
                         <input class="form-control rounded " placeholder="Filtrar per email...">
                     </div>
 
@@ -149,17 +155,18 @@
                         </button>
                     </div>
                 </div>
-                 <div class="row mt-2">
+                <div class="row mt-2">
                     <div class="col-12 px-1 m-0">
                         <div class="bg-gris rounded-top pb-1">
-                            
-                            <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center px-3 py-2">
+
+                            <div
+                                class="d-flex flex-column flex-sm-row justify-content-between align-items-center px-3 py-2">
                                 <div class="input-group order-last order-sm-first mt-2 d-flex  w-auto">
                                     <div class="form-floating border border-1 border-light rounded-start">
                                         <select class="form-select" id="floatingSelect">
-                                                <option value="" selected>
-                                                    Tria una opció
-                                                </option>
+                                            <option value="" selected>
+                                                Tria una opció
+                                            </option>
 
                                         </select>
                                         <label for="floatingSelect">Accions en lot</label>
@@ -171,7 +178,8 @@
                                     </button>
                                 </div>
 
-                                <button class="btn btn-dark  d-flex align-items-center justify-content-center py-sm-3 pe-2 order-first order-md-last text-white rounded-start">
+                                <button
+                                    class="btn btn-dark  d-flex align-items-center justify-content-center py-sm-3 pe-2 order-first order-md-last text-white rounded-start">
                                     <i class="bi bi-plus-circle pe-2"></i>
                                     Crear
                                 </button>
@@ -181,12 +189,13 @@
                     </div>
 
                     <div class="col-12 px-1 m-0">
-                        <div class="table-responsive">
+                        <div class="table">
                             <table class="table table-striped m-0">
                                 <thead class="border-bottom-3 border-dark-subtle">
                                     <tr class="text-center">
                                         <th class="bg-gris2">
-                                            <input class="form-check-input" type="checkbox"></th>
+                                            <input class="form-check-input" type="checkbox">
+                                        </th>
                                         <th class="bg-gris2 txt-morat">ID</th>
                                         <th class="bg-gris2 txt-morat">Nom</th>
                                         <th class="bg-gris2 txt-morat">DNI/NIF</th>
@@ -202,7 +211,7 @@
                                         </td>
                                         <td class="fw-bolder text-align-center">1001</td>
                                         <td>Juan Palomo</td>
-                                        <td>6845699G</td>
+                                        <td>68458699G</td>
                                         <td>639639639</td>
                                         <td>carlos2@gmail.com</td>
                                         <td>
@@ -223,11 +232,11 @@
                                         </td>
                                         <td class="fw-bolder text-align-center">1002</td>
                                         <td>Juan Palomo</td>
-                                        <td>6845699G</td>
+                                        <td>68458699G</td>
                                         <td>639639639</td>
                                         <td>carlos2@gmail.com</td>
                                         <td>
-                                            <a href="#" class="link-underline link-underline-opacity-0"> 
+                                            <a href="#" class="link-underline link-underline-opacity-0">
                                                 <i class="bi bi-pencil-square ps-3 py-3 fs-5 text-primary"></i>
                                             </a>
                                             <a href="#" class="link-underline link-underline-opacity-0">
@@ -244,7 +253,7 @@
                                         </td>
                                         <td class="fw-bolder text-align-center">1003</td>
                                         <td>Juan Palomo</td>
-                                        <td>6845699G</td>
+                                        <td>68458699G</td>
                                         <td>639639639</td>
                                         <td>carlos2@gmail.com</td>
                                         <td>
@@ -265,7 +274,7 @@
                                         </td>
                                         <td class="fw-bolder text-align-center">1004</td>
                                         <td>Juan Palomo</td>
-                                        <td>6845699G</td>
+                                        <td>68458699G</td>
                                         <td>639639639</td>
                                         <td>carlos2@gmail.com</td>
                                         <td>
@@ -286,7 +295,7 @@
                                         </td>
                                         <td class="fw-bolder text-align-center">1005</td>
                                         <td>Juan Palomo</td>
-                                        <td>6845699G</td>
+                                        <td>68458699G</td>
                                         <td>639639639</td>
                                         <td>carlos2@gmail.com</td>
                                         <td>
@@ -307,7 +316,7 @@
                                         </td>
                                         <td class="fw-bolder text-align-center">1006</td>
                                         <td>Juan Palomo</td>
-                                        <td>6845699G</td>
+                                        <td>68458699G</td>
                                         <td>639639639</td>
                                         <td>carlos2@gmail.com</td>
                                         <td>
@@ -328,7 +337,7 @@
                                         </td>
                                         <td class="fw-bolder text-align-center">1007</td>
                                         <td>Juan Palomo</td>
-                                        <td>6845699G</td>
+                                        <td>68458699G</td>
                                         <td>639639639</td>
                                         <td>carlos2@gmail.com</td>
                                         <td>
@@ -349,7 +358,7 @@
                                         </td>
                                         <td class="fw-bolder text-align-center">1008</td>
                                         <td>Juan Palomo</td>
-                                        <td>6845699G</td>
+                                        <td>68458699G</td>
                                         <td>639639639</td>
                                         <td>carlos2@gmail.com</td>
                                         <td>
@@ -370,7 +379,7 @@
                                         </td>
                                         <td class="fw-bolder text-align-center">1009</td>
                                         <td>Juan Palomo</td>
-                                        <td>6845699G</td>
+                                        <td>68458699G</td>
                                         <td>639639639</td>
                                         <td>carlos2@gmail.com</td>
                                         <td>
@@ -391,7 +400,7 @@
                                         </td>
                                         <td class="fw-bolder text-align-center">1010</td>
                                         <td>Juan Palomo</td>
-                                        <td>6845699G</td>
+                                        <td>68458699G</td>
                                         <td>639639639</td>
                                         <td>carlos2@gmail.com</td>
                                         <td>
@@ -412,7 +421,7 @@
                                         </td>
                                         <td class="fw-bolder text-align-center">1011</td>
                                         <td>Juan Palomo</td>
-                                        <td>6845699G</td>
+                                        <td>68458699G</td>
                                         <td>639639639</td>
                                         <td>carlos2@gmail.com</td>
                                         <td>
@@ -433,7 +442,7 @@
                                         </td>
                                         <td class="fw-bolder text-align-center">1012</td>
                                         <td>Juan Palomo</td>
-                                        <td>6845699G</td>
+                                        <td>68458699G</td>
                                         <td>639639639</td>
                                         <td>carlos2@gmail.com</td>
                                         <td>
@@ -454,7 +463,7 @@
                                         </td>
                                         <td class="fw-bolder text-align-center">1013</td>
                                         <td>Juan Palomo</td>
-                                        <td>6845699G</td>
+                                        <td>68458699G</td>
                                         <td>639639639</td>
                                         <td>carlos2@gmail.com</td>
                                         <td>
@@ -475,7 +484,7 @@
                                         </td>
                                         <td class="fw-bolder text-align-center">1014</td>
                                         <td>Juan Palomo</td>
-                                        <td>6845699G</td>
+                                        <td>68458699G</td>
                                         <td>639639639</td>
                                         <td>carlos2@gmail.com</td>
                                         <td>
@@ -496,7 +505,7 @@
                                         </td>
                                         <td class="fw-bolder text-align-center">1015</td>
                                         <td>Juan Palomo</td>
-                                        <td>6845699G</td>
+                                        <td>68458699G</td>
                                         <td>639639639</td>
                                         <td>carlos2@gmail.com</td>
                                         <td>
@@ -520,16 +529,16 @@
                                 <nav aria-label="Page navigation example">
                                     <ul class="pagination">
                                         <li class="page-item">
-                                            <a class="page-link" href="#" aria-label="Previous">
+                                            <a class="page-link text-black" href="#" aria-label="Previous">
                                                 <span aria-hidden="true">&laquo;</span>
                                             </a>
                                         </li>
-                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item active"><a class="page-link bg_blau_oscur" href="#">2</a>
-                                        </li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link text-black" href="#">1</a></li>
+                                        <li class="page-item active"><a class="page-link bg-dark border-dark"
+                                                href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link text-black" href="#">3</a></li>
                                         <li class="page-item">
-                                            <a class="page-link" href="#" aria-label="Next">
+                                            <a class="page-link text-black" href="#" aria-label="Next">
                                                 <span aria-hidden="true">&raquo;</span>
                                             </a>
                                         </li>
