@@ -6,16 +6,45 @@ body{
     width: 65px;
 }
 
+.algo1{
+    position: sticky;
+    top: 0px;
+    left:0px;
+    z-index: 100;
+}
+.algo2{
+    position: sticky;
+    top: 89px;
+    left:0px;
+    z-index: 100;
+}
+.algo3{
+    position: sticky;
+    top: 130px;
+    left:0px;
+    z-index: 100;
+}
+
+
+
 .bg-gris {
-    background-color: #d1d5db;
+    background-color: #b3b5b7 !important;
+}
+
+.bg-gris2 {
+    background-color: #e0e1e2 !important;
 }
 
 .bg-morat {
-    background-color: #47488e;
+    background-color: #47488e !important;
+}
+
+.txt-morat {
+    color: #47488e !important;
 }
 
 .bg_menu_lateral, .menu_lateral {
-    background-color: #1e293b;
+    background-color: #1e293b !important;
 }
 
 
