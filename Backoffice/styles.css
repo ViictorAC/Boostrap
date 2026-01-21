@@ -69,3 +69,23 @@ body{
 .entrar:hover {
     background-color: #37376b !important;
 }
+
+@media (max-width: 767px) {
+    #taula thead th {
+        display: none;
+    }
+
+    #taula td { 
+        display: block;
+    }
+
+    #taula td::before {
+        content: attr(data-cell) "";
+        font-weight: 700;
+    }
+
+    .tot {
+        width: 100% !important;
+    }
+
+}
