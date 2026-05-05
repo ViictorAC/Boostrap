@@ -1,5 +1,7 @@
 :root{
     --color-gris: #e8f1f9;
+    --color-negre: #23282d;
+    --color-roig: 
 }
 
 @font-face {
@@ -43,6 +45,25 @@ body {
 }
 
 .imgGrafics{
-    width: 260px;
+    width: 280px;
 }
 
+.textActivitat{
+    font-size: 12px;
+}
+
+.textActivitat2{
+    font-size: 14px;
+}
+
+.fonsSidebar{
+    background-color: var(--color-negre);
+}
+
+.iconaPlay{
+    font-size: 80px;
+}
+
+.iconaPlay:hover{
+    font-size: 120px;
+}

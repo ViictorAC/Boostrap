@@ -22,52 +22,56 @@
 
 <body>
     <div class="container-fluid fondo">
-
         <div class="row ms-1">
-            <div class="col-2 bg-white">
-                <div class="container p-0">
-                    <div class="row ms-1 p-0">
-                        <div class="col-12 p-0">
+            <div class="col-2 bg-white p-0">
 
-                            <div class="d-flex flex-column align-items-center pt-3 pe-4 pb-0">
+                <div class="container p-0">
+                    <div class="row ms-1">
+                        <div class="col-12 ps-0">
+                            <div class="d-flex flex-column align-items-center ps-2 pt-3 pe-4 pb-0">
                                 <img src="ud8act4recursos/img/persona1.png" alt="Imatge perfil"
                                     class="img rounded-circle imgPerfil">
                                 <p class="m-0 fs-5 fw-bold">Rosa Risa</p>
                                 <p class="fs-">SecOp Nivell2</p>
                             </div>
 
-                            <div class="list-group rounded-0 me-3 ">
+                            <div class="list-group rounded-0 pe-3 ps-1">
 
-                                <a href="#" class="list-group-item  list-group-item-action active" aria-current="true">
+                                <a href="#" class="list-group-item  fonsSidebar text-white border-0 pt-3 pb-3"
+                                    aria-current="true">
                                     <i class="bi bi-file-earmark-text"></i>
                                     Inventari actius
                                 </a>
-                                <a href="#" class="list-group-item  list-group-item-action">
+                                <a href="#" class="list-group-item  fonsSidebar text-white border-0 pt-3 pb-3">
                                     <i class="bi bi-fingerprint"></i>
                                     Anàlisi forense
                                 </a>
-                                <a href="#" class="list-group-item list-group-item-action">
+                                <a href="#"
+                                    class="list-group-item list-group-item-secondary text-secondary fw-bold fst-italic border-0 pt-3 pb-3">
                                     <i class="bi bi-bar-chart"></i>
                                     Estadístiques
                                 </a>
-                                <a href="#" class="list-group-item list-group-item-action">
+                                <a href="#" class="list-group-item fonsSidebar text-white border-0 pt-3 pb-3">
                                     <i class="bi bi-file-person"></i>
                                     Clients
                                 </a>
-                                <a href="#" class="list-group-item list-group-item-action" aria-disabled="true">
+                                <a href="#" class="list-group-item fonsSidebar text-white border-0 pt-3 pb-3"
+                                    aria-disabled="true">
                                     <i class="bi bi-bandaid"></i>
                                     Auditoria atacs
                                 </a>
-                                <a href="#" class="list-group-item list-group-item-action" aria-disabled="true">
+                                <a href="#" class="list-group-item fonsSidebar text-white border-0 pt-3 pb-3"
+                                    aria-disabled="true">
                                     <i class="bi bi-envelope-exclamation"></i>
-                                    Missatges 14
+                                    Missatges
+                                    <span class="badge text-bg-primary rounded-pill ">14</span>
                                 </a>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="col-10 p-0">
                 <nav class="navbar bg-white ms-1 pb-2">
                     <div class="container ">
@@ -118,9 +122,13 @@
                                     <h5 class="card-title fs-4 mb-0">Evolució</h5>
                                 </div>
                                 <div class="card-body">
-                                    <p class="card-text">Detall</p>
-                                    <i class="bi bi-play-circle"></i>
-                                    <img src="ud8act4recursos/img/evolucio2.jpg" alt="Grafics" class="imgGrafics">
+                                    <div
+                                        class="position-absolute ps-1 pt-5 top-50 start-50 translate-middle d-flex flex-column align-items-center">
+                                        <p class="card-text fs-3 fw-bold pt-3 m-0">Detall</p>
+                                        <i class="bi bi-play-circle iconaPlay active-danger"></i>
+                                    </div>
+                                    <img src="ud8act4recursos/img/evolucio2.jpg" alt="Grafics"
+                                        class="imgGrafics opacity-25">
                                 </div>
                             </div>
                         </div>
@@ -132,7 +140,8 @@
                                     <h5 class="card-title fs-4 mb-0">Atacs per continent</h5>
                                 </div>
                                 <div class="card-body p-0">
-                                    <canvas id="grafic-redo" style="position:relative; width:50vw; height:100vh;"></canvas>
+                                    <canvas id="grafic-redo"
+                                        style="position:relative; width:50vw; height:100vh;"></canvas>
                                 </div>
                             </div>
                         </div>
@@ -144,88 +153,155 @@
                                     <h5 class="card-title fs-4 mb-0">% Activitat</h5>
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-title"></h5>
-                                    <canvas id="bar-chart-horizontal" width="800" height="450"></canvas>
+                                    <div class="d-flex aling-items-center mt-1 mb-2">
+                                        <p class="m-0 ps-3 pe-3 textActivitat">ssh</p>
+                                        <div class="progress-stacked flex-fill rounded-start-0" style="height: 24px;">
+                                            <div class="progress" role="progressbar" style="width: 41% ; height: 100%">
+                                                <div class="progress-bar bg-success">35%</div>
+                                            </div>
+                                            <div class="progress" role="progressbar" style="width: 36%; height: 100%">
+                                                <div class="progress-bar bg-info">30%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex aling-items-centermt-1 mb-2">
+                                        <p class="m-0 ps-3 pe-3 textActivitat">ftp</p>
+                                        <div class="progress-stacked flex-fill rounded-start-0" style="height: 24px;">
+                                            <div class="progress" role="progressbar" style="width: 55% ; height: 100%">
+                                                <div class="progress-bar bg-warning">55%</div>
+                                            </div>
+                                            <div class="progress" role="progressbar" style="width: 45%; height: 100%">
+                                                <div class="progress-bar bg-danger">45%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex align-items-center mt-1 mb-2">
+                                        <p class="m-0 ps-3 pe-3 textActivitat">ntp</p>
+
+                                        <div class="progress-stacked flex-fill rounded-start-0" style="height: 24px;">
+                                            <div class="progress" role="progressbar" style="width: 18% ; height: 100%">
+                                                <div class="progress-bar bg-secondary">15%</div>
+                                            </div>
+                                            <div class="progress" role="progressbar" style="width: 12%; height: 100%">
+                                                <div class="progress-bar ">10%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex align-items-center mt-1 mb-2">
+                                        <p class="m-0 ps-3 pe-3 textActivitat">dns</p>
+
+                                        <div class="progress-stacked flex-fill rounded-start-0" style="height: 24px;">
+                                            <div class="progress " role="progressbar" style="width: 60% ; height: 100%">
+                                                <div class="progress-bar bg-danger ">50%</div>
+                                            </div>
+                                            <div class="progress" role="progressbar" style="width: 35%; height: 100%">
+                                                <div class="progress-bar ">30%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <p class="p-0 m-0 textActivitat2">Última actualització fa 3 mins</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row p-0">
+                            <div class="col-12 pe-0">
+                                <div class="card mt-4 pe-0">
+                                    <div class="card-header d-flex align-items-center pt-3 pb-2">
+                                        <i class="bi bi-clipboard-data fs-4 me-2"></i>
+                                        <h5 class="card-title fs-4 mb-0">Tràfic</h5>
+                                    </div>
+                                    <div class="card-body">
+
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Nº</th>
+                                                    <th scope="col">Pais</th>
+                                                    <th scope="col">Usuaris</th>
+                                                    <th scope="col">Connexions</th>
+                                                    <th scope="col">%Intents</th>
+                                                    <th scope="col">Mitjana atac (seg)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>155257</td>
+                                                    <td>Xina</td>
+                                                    <td>2525</td>
+                                                    <td>1560</td>
+                                                    <td>2500</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>115776</td>
+                                                    <td>USA</td>
+                                                    <td>6634</td>
+                                                    <td>7887</td>
+                                                    <td>3453</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td>114889</td>
+                                                    <td>Rúsia</td>
+                                                    <td>8768</td>
+                                                    <td>3288</td>
+                                                    <td>934</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">4</th>
+                                                    <td>112187</td>
+                                                    <td>Indonesia</td>
+                                                    <td>45533</td>
+                                                    <td>67887</td>
+                                                    <td>2234</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">5</th>
+                                                    <td>99023</td>
+                                                    <td>India</td>
+                                                    <td>667675</td>
+                                                    <td>3414</td>
+                                                    <td>654</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="card-footer pe-1 d-flex justify-content-between">
+                                        <p class="textActivitat2 pt-2 m-0">Mostrant 1 de 8</p>
+                                        <ul class="pagination justify-content-end m-0 p-0">
+                                            <li class="page-item disabled">
+                                                <a class="page-link">Anterior</a>
+                                            </li>
+                                            <li class="page-item active">
+                                                <a class="page-link" href="#" aria-current="page">1</a>
+                                            </li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">Següent</a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="card">
-                                <div class="card-header d-flex">
-                                    <i class="bi bi-clipboard-data"></i>
-                                    <h5 class="card-title">Tràfic</h5>
-                                </div>
-                                <div class="card-body">
-
-                                    <table class="table table-striped">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">Nº</th>
-                                                <th scope="col">Pais</th>
-                                                <th scope="col">Usuaris</th>
-                                                <th scope="col">Connexions</th>
-                                                <th scope="col">%Intents</th>
-                                                <th scope="col">Mitjana atac (seg)</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th scope="row">1</th>
-                                                <td>155257</td>
-                                                <td>Xina</td>
-                                                <td>2525</td>
-                                                <td>1560</td>
-                                                <td>2500</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">2</th>
-                                                <td>115776</td>
-                                                <td>USA</td>
-                                                <td>6634</td>
-                                                <td>7887</td>
-                                                <td>3453</td>
-
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">3</th>
-                                                <td>114889</td>
-                                                <td>Rúsia</td>
-                                                <td>8768</td>
-                                                <td>3288</td>
-                                                <td>934</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">4</th>
-                                                <td>112187</td>
-                                                <td>Indonesia</td>
-                                                <td>45533</td>
-                                                <td>67887</td>
-                                                <td>2234</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">5</th>
-                                                <td>99023</td>
-                                                <td>India</td>
-                                                <td>667675</td>
-                                                <td>3414</td>
-                                                <td>654</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-
+                <div class="text-center p-3 bg-light mt-4 textActivitat fst-italic">
+                    @202X Disseny Interfíces Web 
+                </div>
             </div>
         </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
-    <script src="grafics.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+        <script src="grafics.js"></script>
 
 </body>
 
