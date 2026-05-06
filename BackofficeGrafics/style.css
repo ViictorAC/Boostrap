@@ -1,7 +1,9 @@
 :root{
     --color-gris: #e8f1f9;
     --color-negre: #23282d;
-    --color-roig: 
+    --color-roig: #ff0000;
+    --color-sidebar: #e8eaed;
+    -color-lletra-sidebar: #53575b;
 }
 
 @font-face {
@@ -58,6 +60,18 @@ body {
 
 .fonsSidebar{
     background-color: var(--color-negre);
+    color: var(--color-gris);
+}
+
+.fonsSidebarActive{
+    color: var(--color-lletra-sidebar);
+    background-color: var(--color-sidebar);
+}
+
+.fonsSidebar:hover{
+    color: var(--color-lletra-sidebar);
+    background-color: var(--color-sidebar);
+    
 }
 
 .iconaPlay{
@@ -66,4 +80,5 @@ body {
 
 .iconaPlay:hover{
     font-size: 120px;
+    color: var(--color-roig);
 }

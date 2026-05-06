@@ -32,36 +32,33 @@
                                 <img src="ud8act4recursos/img/persona1.png" alt="Imatge perfil"
                                     class="img rounded-circle imgPerfil">
                                 <p class="m-0 fs-5 fw-bold">Rosa Risa</p>
-                                <p class="fs-">SecOp Nivell2</p>
+                                <p class="small">SecOp Nivell2</p>
                             </div>
 
                             <div class="list-group rounded-0 pe-3 ps-1">
 
-                                <a href="#" class="list-group-item  fonsSidebar text-white border-0 pt-3 pb-3"
-                                    aria-current="true">
+                                <a href="#" class="list-group-item fonsSidebar border-0 pt-3 pb-3" aria-current="true">
                                     <i class="bi bi-file-earmark-text"></i>
                                     Inventari actius
                                 </a>
-                                <a href="#" class="list-group-item  fonsSidebar text-white border-0 pt-3 pb-3">
+                                <a href="#" class="list-group-item fonsSidebar border-0 pt-3 pb-3">
                                     <i class="bi bi-fingerprint"></i>
                                     Anàlisi forense
                                 </a>
                                 <a href="#"
-                                    class="list-group-item list-group-item-secondary text-secondary fw-bold fst-italic border-0 pt-3 pb-3">
+                                    class="list-group-item fonsSidebarActive text-secondary fw-bold fst-italic border-0 pt-3 pb-3">
                                     <i class="bi bi-bar-chart"></i>
                                     Estadístiques
                                 </a>
-                                <a href="#" class="list-group-item fonsSidebar text-white border-0 pt-3 pb-3">
+                                <a href="#" class="list-group-item fonsSidebar border-0 pt-3 pb-3">
                                     <i class="bi bi-file-person"></i>
                                     Clients
                                 </a>
-                                <a href="#" class="list-group-item fonsSidebar text-white border-0 pt-3 pb-3"
-                                    aria-disabled="true">
+                                <a href="#" class="list-group-item fonsSidebar border-0 pt-3 pb-3" aria-disabled="true">
                                     <i class="bi bi-bandaid"></i>
                                     Auditoria atacs
                                 </a>
-                                <a href="#" class="list-group-item fonsSidebar text-white border-0 pt-3 pb-3"
-                                    aria-disabled="true">
+                                <a href="#" class="list-group-item fonsSidebar border-0 pt-3 pb-3" aria-disabled="true">
                                     <i class="bi bi-envelope-exclamation"></i>
                                     Missatges
                                     <span class="badge text-bg-primary rounded-pill ">14</span>
@@ -83,8 +80,18 @@
                                 <p class="m-0 border-end pe-3">10:52:25 +1 GMT</p>
                             </div>
 
-                            <button type="button" class="btn position-relative me-4">
+                            <button type="button" class="btn position-relative me-4 dropdown-toggle"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="bi bi-bug-fill fs-4"></i>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                </ul>
                                 <span
                                     class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger mt-2">
                                     99+
@@ -122,13 +129,14 @@
                                     <h5 class="card-title fs-4 mb-0">Evolució</h5>
                                 </div>
                                 <div class="card-body">
+                                    <img src="ud8act4recursos/img/evolucio2.jpg" alt="Grafics"
+                                        class="imgGrafics opacity-25" />
                                     <div
                                         class="position-absolute ps-1 pt-5 top-50 start-50 translate-middle d-flex flex-column align-items-center">
                                         <p class="card-text fs-3 fw-bold pt-3 m-0">Detall</p>
                                         <i class="bi bi-play-circle iconaPlay active-danger"></i>
                                     </div>
-                                    <img src="ud8act4recursos/img/evolucio2.jpg" alt="Grafics"
-                                        class="imgGrafics opacity-25">
+
                                 </div>
                             </div>
                         </div>
@@ -139,9 +147,8 @@
                                     <i class="bi bi-compass fs-4 me-2"></i>
                                     <h5 class="card-title fs-4 mb-0">Atacs per continent</h5>
                                 </div>
-                                <div class="card-body p-0">
-                                    <canvas id="grafic-redo"
-                                        style="position:relative; width:50vw; height:100vh;"></canvas>
+                                <div class="card-body p-0 pt-2 m-0">
+                                    <canvas id="grafic-redo"></canvas>
                                 </div>
                             </div>
                         </div>
@@ -296,7 +303,7 @@
 
                 </div>
                 <div class="text-center p-3 bg-light mt-4 textActivitat fst-italic">
-                    @202X Disseny Interfíces Web 
+                    @202X Disseny Interfíces Web
                 </div>
             </div>
         </div>
