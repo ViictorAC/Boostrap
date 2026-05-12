@@ -35,32 +35,36 @@
                                 <p class="small">SecOp Nivell2</p>
                             </div>
 
-                            <div class="list-group rounded-0 pe-3 ps-1">
+                  
+                                <a href="#" class="list-group-item d-flex fonsSidebar border-0 pt-3 pb-3" aria-current="true">
+                                <div class="list-group rounded-0 pe-3 ps-1">
 
-                                <a href="#" class="list-group-item fonsSidebar border-0 pt-3 pb-3" aria-current="true">
+                                <a href="#" class="list-group-item d-flex fonsSidebar border-0 pt-3 pb-3" aria-current="true">
                                     <i class="bi bi-file-earmark-text"></i>
-                                    Inventari actius
+                                    <p class=" ps-1 d-none d-sm-none d-md-none d-lg-block">Inventari actius</p>
                                 </a>
-                                <a href="#" class="list-group-item fonsSidebar border-0 pt-3 pb-3">
+                                <a href="#" class="list-group-item d-flex fonsSidebar border-0 pt-3 pb-3">
                                     <i class="bi bi-fingerprint"></i>
-                                    Anàlisi forense
+                                    <p class="ps-1 d-none d-sm-none d-md-none d-lg-block">Anàlisi forense</p>
                                 </a>
                                 <a href="#"
-                                    class="list-group-item fonsSidebarActive text-secondary fw-bold fst-italic border-0 pt-3 pb-3">
+                                    class="list-group-item d-flex fonsSidebarActive text-secondary fw-bold fst-italic border-0 pt-3 pb-3">
                                     <i class="bi bi-bar-chart"></i>
-                                    Estadístiques
+                                    <p class="ps-1 d-none d-sm-none d-md-none d-lg-block">Estadístiques</p>
                                 </a>
-                                <a href="#" class="list-group-item fonsSidebar border-0 pt-3 pb-3">
+                                <a href="#" class="list-group-item d-flex fonsSidebar border-0 pt-3 pb-3">
                                     <i class="bi bi-file-person"></i>
-                                    Clients
+                                    <p class="ps-1 d-none d-sm-none d-md-none d-lg-block">Clients</p>
+                                    
                                 </a>
-                                <a href="#" class="list-group-item fonsSidebar border-0 pt-3 pb-3" aria-disabled="true">
+                                <a href="#" class="list-group-item d-flex fonsSidebar border-0 pt-3 pb-3" aria-disabled="true">
                                     <i class="bi bi-bandaid"></i>
-                                    Auditoria atacs
+                                    <p class="ps-1 d-none d-sm-none d-md-none d-lg-block">Auditoria atacs</p>
+                                    
                                 </a>
-                                <a href="#" class="list-group-item fonsSidebar border-0 pt-3 pb-3" aria-disabled="true">
-                                    <i class="bi bi-envelope-exclamation"></i>
-                                    Missatges
+                                <a href="#" class="list-group-item d-flex fonsSidebar border-0 pt-3 pb-3 " aria-disabled="true">
+                                    <i class="bi bi-envelope-exclamation "></i>
+                                    <p class="ps-1 d-none d-sm-none d-md-none d-lg-block">Missatges</p>
                                     <span class="badge text-bg-primary rounded-pill ">14</span>
                                 </a>
                             </div>
@@ -72,7 +76,7 @@
             <div class="col-10 p-0">
                 <nav class="navbar bg-white ms-1 pb-2">
                     <div class="container ">
-                        <a class="navbar-brand fs-4">Centre de control de seguretat activa</a>
+                        <a class="navbar-brand fs-4 d-none d-sm-none d-md-block">Centre de control de seguretat activa</a>
 
                         <div class="d-flex align-items-center navbar-text ">
                             <div class="d-flex me-2 text-danger">
@@ -80,17 +84,41 @@
                                 <p class="m-0 border-end pe-3">10:52:25 +1 GMT</p>
                             </div>
 
-                            <button type="button" class="btn position-relative me-4 dropdown-toggle"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="bi bi-bug-fill fs-4"></i>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
+                            <button type="button" class="btn position-relative me-4" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="bi bi-bug-fill fs-4 "></i>
+                                <ul class="dropdown-menu  dropdown-menu-end ">
+                                    <li class="ps-3 pe-3">
+                                        <div class="card">
+                                            <img src="/ud8act4recursos/img/ssh.jpg" class="card-img-top imgDesplegable"
+                                                alt="Imatge ssh">
+                                            <div class="card-body">
+                                                <h5 class="card-title">SSH Força bruta</h5>
+                                            </div>
+                                            <div class="card-footer">
+                                                <p class="small">28/01/20XX 11:28:12</p>
+                                            </div>
+                                        </div>
                                     </li>
-                                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider d-fill">
+                                    </li>
+                                    <li class="ps-3 pe-3">
+                                        <div class="card">
+                                            <img src="/ud8act4recursos/img/ddos.jpeg"
+                                                class="card-img-top imgDesplegable" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">DDoS</h5>
+                                            </div>
+                                            <div class="card-footer">
+                                                <p class="small">28/01/20XX 11:28:12</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider d-fill">
+                                    </li>
+                                    <li><a class="dropdown-item text-end text-primary" href="#">Veure més</a></li>
                                 </ul>
                                 <span
                                     class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger mt-2">
@@ -105,7 +133,7 @@
 
                 <div class="container">
                     <div class="row mt-4 pe-5 ps-5">
-                        <div class="col-4 d-flex flex-column pe-4">
+                        <div class="col-md-6 col-lg-4 d-flex flex-column pe-4">
                             <div class="card ">
                                 <div class="card-header d-flex align-items-center pt-3 pb-3">
                                     <i class="bi bi-shield-exclamation fs-4 me-2"></i>
@@ -123,14 +151,14 @@
                                 </div>
                             </div>
 
-                            <div class="card mt-4">
+                            <div class="card mt-4 mb-3">
                                 <div class="card-header d-flex align-items-center pt-3 pb-3">
                                     <i class="bi bi-activity fs-4 me-2"></i>
                                     <h5 class="card-title fs-4 mb-0">Evolució</h5>
                                 </div>
                                 <div class="card-body">
                                     <img src="ud8act4recursos/img/evolucio2.jpg" alt="Grafics"
-                                        class="imgGrafics opacity-25" />
+                                        class="w-100 opacity-25" />
                                     <div
                                         class="position-absolute ps-1 pt-5 top-50 start-50 translate-middle d-flex flex-column align-items-center">
                                         <p class="card-text fs-3 fw-bold pt-3 m-0">Detall</p>
@@ -141,7 +169,7 @@
                             </div>
                         </div>
 
-                        <div class="col-4 p-0">
+                        <div class="col-md-6 col-lg-4 p-0">
                             <div class="card ">
                                 <div class="card-header d-flex align-items-center pt-3 pb-3">
                                     <i class="bi bi-compass fs-4 me-2"></i>
@@ -153,7 +181,7 @@
                             </div>
                         </div>
 
-                        <div class="col-4 ps-1 pe-0">
+                        <div class="col-md-12 col-lg-4 ps-1 pe-0">
                             <div class="card">
                                 <div class="card-header d-flex align-items-center pt-3 pb-3">
                                     <i class="bi bi-speedometer2 fs-4 me-2"></i>
@@ -231,9 +259,9 @@
                                                     <th scope="col">Nº</th>
                                                     <th scope="col">Pais</th>
                                                     <th scope="col">Usuaris</th>
-                                                    <th scope="col">Connexions</th>
-                                                    <th scope="col">%Intents</th>
-                                                    <th scope="col">Mitjana atac (seg)</th>
+                                                    <th scope="col" class="d-none d-md-table-cell">Connexions</th>
+                                                    <th scope="col" class="d-none d-md-table-cell">%Intents</th>
+                                                    <th scope="col" class="d-none d-md-table-cell">Mitjana atac (seg)</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -241,42 +269,42 @@
                                                     <th scope="row">1</th>
                                                     <td>155257</td>
                                                     <td>Xina</td>
-                                                    <td>2525</td>
-                                                    <td>1560</td>
-                                                    <td>2500</td>
+                                                    <td class="d-none d-md-table-cell">2525</td>
+                                                    <td class="d-none d-md-table-cell">1560</td>
+                                                    <td class="d-none d-md-table-cell">2500</td>
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">2</th>
                                                     <td>115776</td>
                                                     <td>USA</td>
-                                                    <td>6634</td>
-                                                    <td>7887</td>
-                                                    <td>3453</td>
+                                                    <td class="d-none d-md-table-cell">6634</td>
+                                                    <td class="d-none d-md-table-cell">7887</td>
+                                                    <td class="d-none d-md-table-cell">3453</td>
 
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">3</th>
                                                     <td>114889</td>
                                                     <td>Rúsia</td>
-                                                    <td>8768</td>
-                                                    <td>3288</td>
-                                                    <td>934</td>
+                                                    <td class="d-none d-md-table-cell">8768</td>
+                                                    <td class="d-none d-md-table-cell">3288</td>
+                                                    <td class="d-none d-md-table-cell">934</td>
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">4</th>
                                                     <td>112187</td>
                                                     <td>Indonesia</td>
-                                                    <td>45533</td>
-                                                    <td>67887</td>
-                                                    <td>2234</td>
+                                                    <td class="d-none d-md-table-cell">45533</td>
+                                                    <td class="d-none d-md-table-cell">67887</td>
+                                                    <td class="d-none d-md-table-cell">2234</td>
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">5</th>
                                                     <td>99023</td>
                                                     <td>India</td>
-                                                    <td>667675</td>
-                                                    <td>3414</td>
-                                                    <td>654</td>
+                                                    <td class="d-none d-md-table-cell">667675</td>
+                                                    <td class="d-none d-md-table-cell">3414</td>
+                                                    <td class="d-none d-md-table-cell">654</td>
                                                 </tr>
                                             </tbody>
                                         </table>

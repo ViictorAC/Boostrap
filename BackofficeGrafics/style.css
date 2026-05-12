@@ -50,6 +50,10 @@ body {
     width: 280px;
 }
 
+.imgDesplegable{
+    width: 160px
+}
+
 .textActivitat{
     font-size: 12px;
 }
@@ -82,3 +86,10 @@ body {
     font-size: 120px;
     color: var(--color-roig);
 }
+
+
+/* Afegir al final de style.css */
+.imgPerfilSm {
+    width: 48px;
+}
+ 
