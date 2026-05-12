@@ -43,7 +43,7 @@ body {
     background-color: var(--color-gris);
 }
 .imgPerfil{
-    width: 135px;
+    width: 50%;
 }
 
 .imgGrafics{
@@ -87,9 +87,3 @@ body {
     color: var(--color-roig);
 }
 
-
-/* Afegir al final de style.css */
-.imgPerfilSm {
-    width: 48px;
-}
- 
